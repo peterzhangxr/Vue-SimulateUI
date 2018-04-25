@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./build/webpack.config.js",
+    "start": "webpack-dev-server --config ./build/webpack.config.js --hot --open",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -36,6 +36,7 @@
   },
   "dependencies": {
     "babel-register": "^6.26.0",
+    "classnames": "^2.2.5",
     "simulate-ui": "git+https://github.com/PeterZhangInc/SimulateUI.git"
   }
 }
