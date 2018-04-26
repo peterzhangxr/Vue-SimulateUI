@@ -1,10 +1,12 @@
 <template>
-    <button :class="classes" :disabled="disabled" :style="styles">
+    <button :class="classes" :disabled="disabled || loading" :style="styles">
+        <spinner v-if="loading"></spinner>
         <slot>Button</slot>
     </button>
 </template>
 <script>
     import cx from 'classnames'
+    import Spinner from '../spinner'
     export default{
         props: {
             color: {
@@ -22,7 +24,7 @@
             flat: Boolean,
             circle: Boolean,
             round: Boolean,
-            loading: Boolean //todo
+            loading: Boolean
         },
         computed: {
             classes() {
@@ -34,11 +36,12 @@
                     { 'su-btn__md': this.md },
                     { 'su-btn__xs': this.xs },
                     { 'su-btn__sm': this.sm },
-                    { 'su-btn__disabled': this.disabled },
+                    { 'su-btn__disabled': this.disabled || this.loading },
                     { 'su-btn__outline': this.outline },
                     { 'su-btn__flat': this.flat},
                     { 'su-btn__circle': this.circle },
-                    { 'su-btn__round': this.round}
+                    { 'su-btn__round': this.round },
+                    { 'su-btn__loading': this.loading }
                 ])
             },
             styles() {
@@ -47,6 +50,9 @@
                     height: this.size
                 }
             }
+        },
+        components: {
+            Spinner
         }
     }
 </script>
