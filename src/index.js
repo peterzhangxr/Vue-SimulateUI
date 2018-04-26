@@ -8,10 +8,12 @@ import Switch from './components/switch'
 import Avatar from './components/avatar'
 import Button from './components/button'
 import Icon from './components/icon'
+import Spinner from './components/spinner'
 
 module.exports = {
     Switch,
     Avatar,
     Button,
-    Icon
+    Icon,
+    Spinner
 }
