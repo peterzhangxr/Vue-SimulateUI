@@ -6,8 +6,10 @@ import './style.css'
 
 import Switch from './components/switch'
 import Avatar from './components/avatar'
+import Button from './components/button'
 
 module.exports = {
     Switch,
-    Avatar
+    Avatar,
+    Button
 }

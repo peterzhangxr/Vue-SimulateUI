@@ -1,7 +1,7 @@
 <template>
     <div class="su-avatar" :class="tileCls" :style="sizeSty">
         <slot>
-            <img v-if="url" :src="url" />
+            <img v-if="url" :src="url" alt="avatar"/>
         </slot>
         <slot name="upload"></slot>
     </div>
