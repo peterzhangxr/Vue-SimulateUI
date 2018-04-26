@@ -7,13 +7,15 @@ import App from './App.vue'
 import {
     Switch,
     Avatar,
-    Button
+    Button,
+    Icon
 } from '../src/index'
 //临时测试
 
 Vue.component('sSwitch', Switch)
 Vue.component('sAvatar', Avatar)
 Vue.component('sBtn', Button)
+Vue.component('sIcon', Icon)
 
 new Vue({
     el: '#app',

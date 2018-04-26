@@ -7,9 +7,11 @@ import './style.css'
 import Switch from './components/switch'
 import Avatar from './components/avatar'
 import Button from './components/button'
+import Icon from './components/icon'
 
 module.exports = {
     Switch,
     Avatar,
-    Button
+    Button,
+    Icon
 }

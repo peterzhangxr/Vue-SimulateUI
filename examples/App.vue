@@ -2,7 +2,9 @@
     <div>
         <s-switch v-model="tile"></s-switch>{{tile}}
         <s-avatar url="https://placehold.it/144x144" :tile="tile"></s-avatar>
-        <s-btn color="primary" block disabled></s-btn>
+        <s-btn color="primary" block disabled>
+            <s-icon>fa fa-map</s-icon> 按钮
+        </s-btn>
     </div>
 </template>
 <script>
