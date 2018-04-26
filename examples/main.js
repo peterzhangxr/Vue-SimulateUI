@@ -4,10 +4,11 @@
 import './example.css'
 import Vue from 'vue'
 import App from './App.vue'
-import { Switch } from '../src/index'
+import { Switch, Avatar } from '../src/index'
 //临时测试
 
 Vue.component('sSwitch', Switch)
+Vue.component('sAvatar', Avatar)
 
 new Vue({
     el: '#app',

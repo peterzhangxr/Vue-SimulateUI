@@ -1,6 +1,7 @@
 <template>
     <div>
-        <s-switch v-model="open"></s-switch>{{ open }}
+        <s-switch v-model="tile"></s-switch>{{tile}}
+        <s-avatar url="https://placehold.it/144x144" :tile="tile"></s-avatar>
     </div>
 </template>
 <script>
@@ -8,7 +9,7 @@
         data(){
             return{
                 msg:'hello vue',
-                open: true
+                tile: false
             }
         },
         components:{

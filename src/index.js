@@ -5,7 +5,9 @@
 import './style.css'
 
 import Switch from './components/switch'
+import Avatar from './components/avatar'
 
 module.exports = {
-    Switch
+    Switch,
+    Avatar
 }

@@ -1,6 +1,6 @@
 <template>
     <div class="su-switch">
-        <input type="checkbox" class="su-switch__input" v-model="current"/>
+        <input type="checkbox" :disabled="disabled" class="su-switch__input" v-model="current"/>
         <div class="su-switch__box" :class="'su-switch__' + color"></div>
     </div>
 </template>
@@ -15,7 +15,12 @@
             value: {
                 type: Boolean,
                 default: false
+            },
+            disabled: {
+                type: Boolean,
+                default: false
             }
+
         },
         computed: {
             current: {
