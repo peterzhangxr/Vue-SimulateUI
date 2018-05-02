@@ -9,7 +9,8 @@ import {
     Avatar,
     Button,
     Icon,
-    Spinner
+    Spinner,
+    Search
 } from '../src/index'
 //临时测试
 
@@ -18,6 +19,7 @@ Vue.component('sAvatar', Avatar)
 Vue.component('sBtn', Button)
 Vue.component('sIcon', Icon)
 Vue.component('sSpinner', Spinner)
+Vue.component('sSearch', Search)
 
 new Vue({
     el: '#app',
