@@ -10,6 +10,7 @@ import Button from './components/button'
 import Icon from './components/icon'
 import Spinner from './components/spinner'
 import Search from './components/search'
+import Checkbox from './components/checkbox'
 
 module.exports = {
     Switch,
@@ -17,5 +18,6 @@ module.exports = {
     Button,
     Icon,
     Spinner,
-    Search
+    Search,
+    Checkbox
 }

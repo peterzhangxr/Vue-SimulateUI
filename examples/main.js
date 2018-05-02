@@ -10,7 +10,8 @@ import {
     Button,
     Icon,
     Spinner,
-    Search
+    Search,
+    Checkbox
 } from '../src/index'
 //临时测试
 
@@ -20,6 +21,7 @@ Vue.component('sBtn', Button)
 Vue.component('sIcon', Icon)
 Vue.component('sSpinner', Spinner)
 Vue.component('sSearch', Search)
+Vue.component('sCheckbox', Checkbox)
 
 new Vue({
     el: '#app',

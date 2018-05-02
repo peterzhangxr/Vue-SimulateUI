@@ -1,14 +1,13 @@
 <template>
     <div>
-        <s-search v-model="msg" autofocus v-on:search="getList"></s-search>
-        {{msg}}
+        <s-checkbox v-model="msg" @change="getList">你们的{{msg}}</s-checkbox>
     </div>
 </template>
 <script>
     export default{
         data(){
-            return{
-                msg:'hello vue',
+            return {
+                msg: true,
                 tile: false
             }
         },
