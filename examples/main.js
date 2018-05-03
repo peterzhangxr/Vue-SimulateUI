@@ -11,7 +11,12 @@ import {
     Icon,
     Spinner,
     Search,
-    Checkbox
+    Checkbox,
+    Cells,
+    Cell,
+    CellHd,
+    CellBd,
+    CellFt
 } from '../src/index'
 //临时测试
 
@@ -22,6 +27,11 @@ Vue.component('sIcon', Icon)
 Vue.component('sSpinner', Spinner)
 Vue.component('sSearch', Search)
 Vue.component('sCheckbox', Checkbox)
+Vue.component('sCells', Cells)
+Vue.component('sCell', Cell)
+Vue.component('sCellHd', CellHd)
+Vue.component('sCellBd', CellBd)
+Vue.component('sCellFt', CellFt)
 
 new Vue({
     el: '#app',

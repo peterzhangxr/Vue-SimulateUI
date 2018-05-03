@@ -11,6 +11,7 @@ import Icon from './components/icon'
 import Spinner from './components/spinner'
 import Search from './components/search'
 import Checkbox from './components/checkbox'
+import { Cells, Cell, CellHd, CellBd, CellFt } from './components/cell'
 
 module.exports = {
     Switch,
@@ -19,5 +20,10 @@ module.exports = {
     Icon,
     Spinner,
     Search,
-    Checkbox
+    Checkbox,
+    Cells,
+    Cell,
+    CellHd,
+    CellBd,
+    CellFt
 }
