@@ -19,6 +19,7 @@ import {
     CellFt
 } from './components/cell'
 import Radio from './components/radio'
+import Input from './components/input'
 
 module.exports = {
     Switch,
@@ -33,5 +34,6 @@ module.exports = {
     CellHd,
     CellBd,
     CellFt,
-    Radio
+    Radio,
+    Input
 }

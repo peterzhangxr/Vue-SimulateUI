@@ -17,7 +17,8 @@ import {
     CellHd,
     CellBd,
     CellFt,
-    Radio
+    Radio,
+    Input
 } from '../src/index'
 //临时测试
 
@@ -34,6 +35,7 @@ Vue.component('sCellHd', CellHd)
 Vue.component('sCellBd', CellBd)
 Vue.component('sCellFt', CellFt)
 Vue.component('sRadio', Radio)
+Vue.component('sInput', Input)
 
 new Vue({
     el: '#app',
