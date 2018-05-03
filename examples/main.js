@@ -24,7 +24,8 @@ import {
     FlexItem,
     Grids,
     Grid,
-    Square
+    Square,
+    Counter
 } from '../src/index'
 //临时测试
 
@@ -48,6 +49,7 @@ Vue.component('sFlexItem', FlexItem)
 Vue.component('sGrids', Grids)
 Vue.component('sGrid', Grid)
 Vue.component('sSquare', Square)
+Vue.component('sCounter', Counter)
 
 new Vue({
     el: '#app',

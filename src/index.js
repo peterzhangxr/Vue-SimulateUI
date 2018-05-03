@@ -23,6 +23,7 @@ import {
 import {
     Grids, Grid, Square
 } from './components/grid'
+import Counter from './components/counter'
 
 module.exports = {
     Switch,
@@ -44,5 +45,6 @@ module.exports = {
     FlexItem,
     Grids,
     Grid,
-    Square
+    Square,
+    Counter
 }
