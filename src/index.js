@@ -20,6 +20,7 @@ import {
 } from './components/cell'
 import Radio from './components/radio'
 import Input from './components/input'
+import Textarea from './components/textarea'
 
 module.exports = {
     Switch,
@@ -35,5 +36,6 @@ module.exports = {
     CellBd,
     CellFt,
     Radio,
-    Input
+    Input,
+    Textarea
 }

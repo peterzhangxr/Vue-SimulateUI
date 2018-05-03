@@ -18,7 +18,8 @@ import {
     CellBd,
     CellFt,
     Radio,
-    Input
+    Input,
+    Textarea
 } from '../src/index'
 //临时测试
 
@@ -36,6 +37,7 @@ Vue.component('sCellBd', CellBd)
 Vue.component('sCellFt', CellFt)
 Vue.component('sRadio', Radio)
 Vue.component('sInput', Input)
+Vue.component('sTextarea', Textarea)
 
 new Vue({
     el: '#app',

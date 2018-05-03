@@ -1,7 +1,7 @@
 <template>
     <div>
         <label v-if="label" class="su-cell__label">{{ label }}</label>
-        <input :type="type" v-model="current" class="su-input" :readonly="readonly" :disabled="disabled" :placeholder="placeholder" @change="$emit('input', current)"/>
+        <textarea v-model="current" :rows="rows" :readonly="readonly" :disabled="disabled" :placeholder="placeholder" @change="$emit('input', current)"></textarea>
     </div>
 </template>
 <script>
@@ -10,12 +10,12 @@
             value: [String, Number],
             label: String,
             placeholder: String,
-            type: {
-                type: String,
-                default: 'text'
+            rows: {
+                type: Number,
+                default: 3
             },
-           readonly: Boolean,
-           disabled: Boolean
+            readonly: Boolean,
+            disabled: Boolean
         },
         data() {
             return {
