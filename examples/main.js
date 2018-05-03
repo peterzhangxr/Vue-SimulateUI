@@ -21,7 +21,10 @@ import {
     Input,
     Textarea,
     Flex,
-    FlexItem
+    FlexItem,
+    Grids,
+    Grid,
+    Square
 } from '../src/index'
 //临时测试
 
@@ -42,6 +45,9 @@ Vue.component('sInput', Input)
 Vue.component('sTextarea', Textarea)
 Vue.component('sFlex', Flex)
 Vue.component('sFlexItem', FlexItem)
+Vue.component('sGrids', Grids)
+Vue.component('sGrid', Grid)
+Vue.component('sSquare', Square)
 
 new Vue({
     el: '#app',

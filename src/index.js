@@ -12,11 +12,7 @@ import Spinner from './components/spinner'
 import Search from './components/search'
 import Checkbox from './components/checkbox'
 import {
-    Cells,
-    Cell,
-    CellHd,
-    CellBd,
-    CellFt
+    Cells, Cell, CellHd, CellBd, CellFt
 } from './components/cell'
 import Radio from './components/radio'
 import Input from './components/input'
@@ -24,6 +20,9 @@ import Textarea from './components/textarea'
 import {
     Flex, FlexItem
 } from './components/flex'
+import {
+    Grids, Grid, Square
+} from './components/grid'
 
 module.exports = {
     Switch,
@@ -42,5 +41,8 @@ module.exports = {
     Input,
     Textarea,
     Flex,
-    FlexItem
+    FlexItem,
+    Grids,
+    Grid,
+    Square
 }
