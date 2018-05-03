@@ -1,7 +1,7 @@
 <template>
-    <div class="su-checkbox">
-        <input type="radio" :name="name"/>
-        <i class="su-checkbox__icon simulate-ui su-right"></i>
+    <div class="su-checkbox" :class="{'su-checkbox__right': right}">
+        <input type="radio" :name="name" @change="toggle"/>
+        <i class="su-checkbox__icon simulate-ui su-right" :class="{'su-checkbox__single': single}"></i>
         <span class="su-checkbox__text">
             <slot></slot>
         </span>
@@ -9,23 +9,20 @@
 </template>
 <script>
     export default {
-        model: {
-            prop: 'value',
-            event: 'change'
-        },
         props: {
             inputValue: null,
             value: null,
-            name: String,
+            name: {
+                type: String,
+                required: true
+            },
             right: Boolean,
             single: Boolean
         },
-        data(){
-            return{
-                msg:'hello vue'
+        methods: {
+            toggle() {
+                this.$emit('input', this.inputValue)
             }
-        },
-        components:{
         }
     }
 </script>

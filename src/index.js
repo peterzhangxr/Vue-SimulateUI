@@ -11,7 +11,14 @@ import Icon from './components/icon'
 import Spinner from './components/spinner'
 import Search from './components/search'
 import Checkbox from './components/checkbox'
-import { Cells, Cell, CellHd, CellBd, CellFt } from './components/cell'
+import {
+    Cells,
+    Cell,
+    CellHd,
+    CellBd,
+    CellFt
+} from './components/cell'
+import Radio from './components/radio'
 
 module.exports = {
     Switch,
@@ -25,5 +32,6 @@ module.exports = {
     Cell,
     CellHd,
     CellBd,
-    CellFt
+    CellFt,
+    Radio
 }
