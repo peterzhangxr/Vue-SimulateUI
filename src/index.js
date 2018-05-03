@@ -21,6 +21,9 @@ import {
 import Radio from './components/radio'
 import Input from './components/input'
 import Textarea from './components/textarea'
+import {
+    Flex, FlexItem
+} from './components/flex'
 
 module.exports = {
     Switch,
@@ -37,5 +40,7 @@ module.exports = {
     CellFt,
     Radio,
     Input,
-    Textarea
+    Textarea,
+    Flex,
+    FlexItem
 }

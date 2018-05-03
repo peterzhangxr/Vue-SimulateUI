@@ -1,7 +1,7 @@
 <template>
     <div>
         <label v-if="label" class="su-cell__label">{{ label }}</label>
-        <input :type="type" v-model="current" class="su-input" :readonly="readonly" :disabled="disabled" :placeholder="placeholder" @change="$emit('input', current)"/>
+        <input :type="type" v-model.trim="current" class="su-input" :readonly="readonly" :disabled="disabled" :placeholder="placeholder" @change="$emit('input', current)"/>
     </div>
 </template>
 <script>

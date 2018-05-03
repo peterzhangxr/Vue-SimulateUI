@@ -19,7 +19,9 @@ import {
     CellFt,
     Radio,
     Input,
-    Textarea
+    Textarea,
+    Flex,
+    FlexItem
 } from '../src/index'
 //临时测试
 
@@ -38,6 +40,8 @@ Vue.component('sCellFt', CellFt)
 Vue.component('sRadio', Radio)
 Vue.component('sInput', Input)
 Vue.component('sTextarea', Textarea)
+Vue.component('sFlex', Flex)
+Vue.component('sFlexItem', FlexItem)
 
 new Vue({
     el: '#app',
